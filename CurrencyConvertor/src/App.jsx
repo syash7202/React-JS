@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <div className=" bg-white/50 text-5xl rounded-lg p-5 text-white  mb-28 ">
-        Currency Convertor
+        Currency Converter
       </div>
       <div className="w-full mt-6 flex flex-wrap justify-center items-center bg-cover bg-no-repeat">
         <div className="w-full">
