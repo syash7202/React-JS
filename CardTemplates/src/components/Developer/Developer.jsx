@@ -11,7 +11,7 @@ function Developer() {
             <img
               src={data.avatar_url}
               alt="png"
-              className="rounded-md shadow-xl border-4 border-red-500 border-spacing-3"
+              className="rounded-md shadow-xl border-4 border-red-500 border-spacing-3 "
             />
           </span>
         </div>
