@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import plane from "../../assets/paper-plane.png";
 
 function Header() {
@@ -9,18 +10,31 @@ function Header() {
           <span>
             <img src={plane} alt="png" className="h-10 w-10 " />
           </span>
-          <h1 className="text-3xl mx-2 text-red-500 font-bold">CARDS</h1>
+          <Link to="/">
+            <h1 className="text-3xl mx-2 text-red-500 font-bold">CARDS</h1>
+          </Link>
         </div>
         <div className=" flex justify-evenly items-center text-black text-xl w-1/3 ">
-          <div className="hover:text-white  hover:bg-red-500 hover:drop-shadow-xl px-3 py-1 rounded">
-            HOME
-          </div>
-          <div className="hover:text-white  hover:bg-red-500 px-3 py-1 rounded">
-            ABOUT{" "}
-          </div>
-          <div className="hover:text-white  hover:bg-red-500 px-3 py-1 rounded">
-            TEMPLATES{" "}
-          </div>
+          <Link to="/">
+            <div className="hover:text-white  hover:bg-red-500 hover:drop-shadow-xl px-3 py-1 rounded">
+              HOME
+            </div>
+          </Link>
+          <Link to="/about">
+            <div className="hover:text-white  hover:bg-red-500 px-3 py-1 rounded">
+              ABOUT{" "}
+            </div>
+          </Link>
+          <Link to="/templates">
+            <div className="hover:text-white  hover:bg-red-500 px-3 py-1 rounded">
+              TEMPLATES{" "}
+            </div>
+          </Link>
+          <Link to="/developer">
+            <div className="hover:text-white  hover:bg-red-500 px-3 py-1 rounded">
+              DEVELOPER{" "}
+            </div>
+          </Link>
         </div>
         <div className=" flex justify-center items-center text-black w-1/3 mr-5 pr-3">
           <div className="mr-6 text-xl hover:bg-red-500 hover:text-white hover:rounded-lg px-5 py-1">

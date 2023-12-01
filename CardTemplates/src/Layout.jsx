@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 function Layout() {
   return (
     <>
-      <div className="min-h-screen flex flex-col font-[Corben]">
+      <div className="min-h-screen flex flex-col font-[Corben] overflow-hidden">
         <Header />
         <Outlet />
         <Footer />

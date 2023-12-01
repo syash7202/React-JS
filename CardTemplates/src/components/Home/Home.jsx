@@ -1,14 +1,12 @@
 import React from "react";
+import Slider from "../Slider/Slider";
 
 function Home() {
   return (
     <>
       <div className="mx-auto w-[65vw] flex flex-grow bg-red-50 ">
         <div className="w-1/2  flex justify-center items-center p-10 ">
-          <img
-            src="https://images.pexels.com/photos/17827032/pexels-photo-17827032/free-photo-of-landscape-of-green-hills.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt=""
-          />
+          <Slider />
         </div>
         <div className="flex flex-col justify-center px-7">
           <h1 className="text-6xl font-medium mb-1  text-red-500 hover:translate-y-1 hover:scale-110  duration-300">

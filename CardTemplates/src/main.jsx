@@ -10,12 +10,20 @@ import "./index.css";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Layout from "./Layout";
+import Templates from "./components/Templates/Templates";
+import Developer, { githubInfoLoader } from "./components/Developer/Developer";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
-      <Route path="/About" element={<About />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/templates" element={<Templates />} />
+      <Route
+        path="/developer"
+        loader={githubInfoLoader}
+        element={<Developer />}
+      />
     </Route>
   )
 );
