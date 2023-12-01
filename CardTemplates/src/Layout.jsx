@@ -6,9 +6,11 @@ import { Outlet } from "react-router-dom";
 function Layout() {
   return (
     <>
-      <Header />
-      <Outlet />
-      <Footer />
+      <div className="min-h-screen flex flex-col font-[Corben]">
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
     </>
   );
 }
