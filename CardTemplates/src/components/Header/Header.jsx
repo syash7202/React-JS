@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import plane from "../../assets/paper-plane.png";
+import menu from "../../assets/menu-burger.png";
 
 function Header() {
   return (
@@ -14,7 +15,8 @@ function Header() {
             <h1 className="text-3xl mx-2 text-red-500 font-bold">CARDS</h1>
           </Link>
         </div>
-        <div className=" flex justify-evenly items-center text-black text-xl w-1/3 ">
+
+        <div className="hidden md:flex md:justify-evenly md:items-center text-black md:text-xl md:w-1/3 ">
           <Link to="/">
             <div className="hover:text-white  hover:bg-red-500 hover:drop-shadow-xl px-3 py-1 rounded">
               HOME
@@ -45,6 +47,33 @@ function Header() {
           </div>
         </div>
       </div>
+
+      {/* <div className="w-full shadow-md sticky top-0 flex justify-evenly py-2">
+        <div className="w-1/2 flex justify-start items-center p-3">
+          <span>
+            <img src={plane} alt="png" className="h-7 w-7 " />
+          </span>
+          <Link to="/">
+            <h1 className="text-2xl mx-2 text-red-500 font-bold">CARDS</h1>
+          </Link>
+        </div>
+        <div className="w-1/2 flex justify-end items-center p-3 gap-3 static md:absolute ">
+          <div>
+            <ul>
+              <li>1234</li>
+              <li>1234</li>
+              <li>1234</li>
+              <li>1234</li>
+            </ul>
+          </div>
+          <button className="flex justify-center items-center ">
+            <img src={menu} alt="" className="  h-7 w-7 md:hidden " />
+          </button>
+
+          <div className="hidden ">login</div>
+          <div className="hidden">get Started</div>
+        </div>
+      </div> */}
     </>
   );
 }
